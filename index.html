@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Código - JavaScript - Alura e Oracle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logoAlura.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <nav>
+            <img src="assets/img/logoAlura.png" alt="Logo Alura">
+            <h1>
+                Decodificador de Código
+            </h1>
+        </nav>
+        <textarea name="inserirTexto" id="inserirTexto" placeholder="Digite seu Texto" rows="15"></textarea>
+        <div id="info">
+            <img src="assets/img/info.png" alt="Icone Informações">
+            <span>
+                Apenas letras minúsculas e sem acento.
+            </span>
+        </div>
+        <div id="buttons">
+            <button id="criptografar" onclick="criptografar()">
+                Criptografar
+            </button>
+            <button id="descriptografar" onclick="descriptografar()">
+                Descriptografar
+            </button>
+        </div>
+    </main>
+    <aside>
+        <div id="semInfo">
+            <img src="assets/img/desenho.png" alt="Imagem Ilustrativa">
+            <h2>
+                Nenhuma mensagem encontrada
+            </h2>
+            <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+        </div>
+        <div id="texto">
+            <textarea name="retornoTexto" id="retornoTexto" rows="15" disabled></textarea>
+            <button id="copiar" onclick="copiar()">
+                Copiar
+            </button>
+        </div>
+    </aside>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
